@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Container className="p-4 max-w-5xl mx-auto">
+      <Container className="max-w-5xl p-4 mx-auto">
         <Card>
           <CardContent>
             <Routes>

@@ -26,7 +26,7 @@ export default function EventForm() {
 
   const mutation = useMutation({
     mutationFn: (data) =>
-      isEdit ? api.patch(`/events/${id}`, data) : api.post("/events", data),
+      isEdit ? api.put(`/events/${id}`, data) : api.post("/events", data),
     onSuccess: () => {
       console.log("Form submitted:", formData);
       queryClient.invalidateQueries(["events"]);
