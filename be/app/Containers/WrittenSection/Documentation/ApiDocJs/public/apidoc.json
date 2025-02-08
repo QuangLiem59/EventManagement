@@ -1,0 +1,14 @@
+{
+    "name": "EventManagement",
+    "description": "EventManagement (Public API) Documentation",
+    "title": "Welcome to EventManagement",
+    "version": "1.0.0",
+    "url": "http://api.appcompany.test",
+    "sampleUrl": "http://api.appcompany.test",
+    "template": { "withCompare": true, "withGenerator": true },
+    "header": {
+        "title": "API Overview",
+        "filename": "Containers/WrittenSection/Documentation/UI/WEB/Views/documentation/header.md"
+    },
+    "order": []
+}

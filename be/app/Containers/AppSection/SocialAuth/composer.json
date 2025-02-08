@@ -1,0 +1,31 @@
+{
+    "name": "apiato/social-auth-container",
+    "description": "An Apiato container which adds social authentication functionality using Laravel Socialite",
+    "type": "apiato-container",
+    "require": {
+        "laravel/socialite": "^5.5.2",
+        "apiato/core": "^v7.0.0-rc.1",
+        "lcobucci/clock": "2.1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": "MIT",
+    "extra": {
+        "apiato": {
+            "container": {
+                "name": "SocialAuth"
+            }
+        },
+        "laravel": {
+            "providers": [
+                "App\\Containers\\AppSection\\SocialAuth\\Providers\\SocialAuthServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "apiato/container-installer": true
+        }
+    }
+}
